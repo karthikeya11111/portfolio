@@ -79,12 +79,14 @@ export default function Experience() {
               className="pl-8 border-l-2 border-primary/20 relative"
             >
               <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-purple-500 shadow-[0_0_10px_rgba(168,85,247,0.5)]" />
-              <div className="mb-1 text-sm text-purple-400 font-mono">June 2025</div>
-              <h4 className="text-xl font-bold">Summer Internship - AR Developer</h4>
+              <div className="mb-1 text-sm text-purple-400 font-mono">May 2025 - June 2025</div>
+              <h4 className="text-xl font-bold">Summer Intern - AR Developer</h4>
               <p className="text-muted-foreground mb-4">CEMS, Visakhapatnam</p>
-              <p className="text-sm text-muted-foreground/80 leading-relaxed">
-                Gained hands-on experience in Augmented Reality using Unity Hub. Developed immersive projects utilizing AR technologies to solve real-world visualization challenges.
-              </p>
+              <ul className="text-sm text-muted-foreground/80 space-y-2">
+                <li>• Developed AR prototypes for educational institutions aligned with digital transformation</li>
+                <li>• Collaborated with cross-functional teams to deliver consulting-style solutions</li>
+                <li>• Conducted testing with 100+ students, improving engagement and learning outcomes</li>
+              </ul>
             </motion.div>
 
             <div className="pt-8">
@@ -94,15 +96,19 @@ export default function Experience() {
               <ul className="space-y-4">
                 <li className="flex items-start gap-3 text-muted-foreground">
                   <div className="w-1.5 h-1.5 rounded-full bg-pink-400 mt-2" />
-                  <span>NPTEL Certificate in Joy of Computing using Python</span>
+                  <span>Coursera: Data Analytics (Enterprise Decision Making)</span>
                 </li>
                 <li className="flex items-start gap-3 text-muted-foreground">
                   <div className="w-1.5 h-1.5 rounded-full bg-pink-400 mt-2" />
-                  <span>Coursera: Data Analytics</span>
+                  <span>NPTEL: Ethical Hacking (Enterprise IT Security)</span>
                 </li>
                 <li className="flex items-start gap-3 text-muted-foreground">
                   <div className="w-1.5 h-1.5 rounded-full bg-pink-400 mt-2" />
-                  <span>Coursera: Prompt Engineering for ChatGPT</span>
+                  <span>NPTEL: Joy of Computing Using Python</span>
+                </li>
+                <li className="flex items-start gap-3 text-muted-foreground">
+                  <div className="w-1.5 h-1.5 rounded-full bg-pink-400 mt-2" />
+                  <span>JNTUGV: Project Expo</span>
                 </li>
               </ul>
             </div>

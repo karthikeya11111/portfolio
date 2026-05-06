@@ -5,22 +5,22 @@ const skills = [
   {
     category: "Languages",
     icon: <Code2 className="w-8 h-8 text-cyan-400" />,
-    items: ["Python", "Java", "C Language", "JavaScript", "PHP"],
+    items: ["Python", "Java", "C", "JavaScript", "PHP"],
   },
   {
     category: "Frontend",
     icon: <Layout className="w-8 h-8 text-purple-400" />,
-    items: ["HTML5", "CSS3", "React (Learning)", "Tailwind CSS"],
+    items: ["React", "Angular", "HTML5", "CSS3", "Tailwind CSS"],
   },
   {
-    category: "Backend & DB",
+    category: "Backend & Database",
     icon: <Database className="w-8 h-8 text-pink-400" />,
-    items: ["MySQL", "Flask", "Node.js (Basic)"],
+    items: ["Node.js", "Flask", "Spring Boot", "MySQL", "Express"],
   },
   {
-    category: "Technologies",
+    category: "AR/VR & Tools",
     icon: <Cpu className="w-8 h-8 text-blue-400" />,
-    items: ["Unity Hub (AR)", "Machine Learning", "Data Analytics"],
+    items: ["Unity", "AR Foundation", "TensorFlow", "Machine Learning", "Data Analytics"],
   },
 ];
 

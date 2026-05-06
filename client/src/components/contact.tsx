@@ -29,7 +29,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">Phone</p>
-                  <p className="font-medium">+91 83418 34232</p>
+                  <p className="font-medium">+91 8341834232</p>
                 </div>
               </div>
 
@@ -51,7 +51,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">Location</p>
-                  <p className="font-medium">Andhra Pradesh, India</p>
+                  <p className="font-medium">Vizianagaram, Andhra Pradesh, India</p>
                 </div>
               </div>
             </div>

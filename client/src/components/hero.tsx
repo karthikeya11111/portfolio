@@ -33,11 +33,11 @@ export default function Hero() {
           
           <h1 className="text-5xl md:text-7xl font-bold font-display mb-6 leading-tight">
             Hi, I'm <br />
-            <span className="text-gradient">Karthikeya</span>
+            <span className="text-gradient">Karthikeya Barnala</span>
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-lg">
-            A passionate <span className="text-foreground font-semibold">Full Stack Developer</span> & <span className="text-foreground font-semibold">AR Enthusiast</span> building scalable systems and solving real-world problems.
+            Aspiring <span className="text-foreground font-semibold">ERP & Full Stack Developer</span> with expertise in <span className="text-foreground font-semibold">AR/VR Innovation</span>. Building enterprise solutions, machine learning applications, and scalable digital systems.
           </p>
           
           <div className="flex flex-wrap gap-4 mb-12">
@@ -50,10 +50,10 @@ export default function Hero() {
           </div>
 
           <div className="flex gap-6 text-muted-foreground">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors hover:scale-110 transform duration-200">
+            <a href="https://github.com/karthikeyabarnala" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors hover:scale-110 transform duration-200">
               <Github className="w-6 h-6" />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors hover:scale-110 transform duration-200">
+            <a href="https://linkedin.com/in/karthikeyabarnala" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors hover:scale-110 transform duration-200">
               <Linkedin className="w-6 h-6" />
             </a>
             <a href="mailto:karthikeyabarnala0@gmail.com" className="hover:text-primary transition-colors hover:scale-110 transform duration-200">

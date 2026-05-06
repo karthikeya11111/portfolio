@@ -4,21 +4,21 @@ import { Button } from "@/components/ui/button";
 
 const projects = [
   {
-    title: "AR Visualization Tool",
-    description: "An augmented reality application built with Unity Hub allowing users to visualize 3D models in real-time environments.",
-    tags: ["Unity", "C#", "AR Core"],
+    title: "Dynamic Resume Builder Platform",
+    description: "Enterprise-grade resume automation platform with secure authentication and scalable APIs. Reduced manual effort by 60% through real-time preview and multi-template PDF export.",
+    tags: ["MERN Stack", "Tailwind CSS", "JWT", "REST API"],
     image: "https://images.unsplash.com/photo-1633536726481-465c3676851d?auto=format&fit=crop&q=80&w=800",
   },
   {
-    title: "Full Stack E-Commerce",
-    description: "A comprehensive e-commerce platform featuring user authentication, product management, and secure checkout.",
-    tags: ["Flask", "MySQL", "Python", "Bootstrap"],
-    image: "https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&q=80&w=800",
+    title: "AR App for Cultural Heritage Preservation",
+    description: "Designed AR mobile app to enhance cultural tourism, showcasing monuments and artifacts. Usability testing with 50+ participants showed 92% improved engagement and learning outcomes.",
+    tags: ["Unity", "AR Foundation", "C#", "3D Modeling"],
+    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=800",
   },
   {
-    title: "Data Analytics Dashboard",
-    description: "Interactive dashboard for visualizing complex datasets, featuring filtering, sorting, and export capabilities.",
-    tags: ["Python", "Pandas", "Matplotlib"],
+    title: "Farmer to Consumer AI Platform",
+    description: "AI-powered marketplace improving supply chain efficiency. Implemented ML models for food detection, price prediction, crop recommendation (85% accuracy). Scaled backend to support 1,000+ concurrent users.",
+    tags: ["Python", "Flask", "TensorFlow", "MySQL"],
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800",
   },
 ];
