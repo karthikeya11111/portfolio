@@ -1,4 +1,4 @@
-import { Github, Linkedin, Twitter } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -6,22 +6,23 @@ export default function Footer() {
       <div className="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
         <div className="text-center md:text-left">
           <p className="text-sm text-muted-foreground">
-            © 2025 Karthikeya Barnala. All rights reserved.
+            © {new Date().getFullYear()} Karthikeya Barnala. All rights reserved.
           </p>
         </div>
         
         <div className="flex items-center gap-6">
-          <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+          <a href="https://github.com/karthikeya11111" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
             <Github className="w-5 h-5" />
           </a>
-          <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+          <a href="https://www.linkedin.com/in/karthikeya-barnala-813a54320" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
             <Linkedin className="w-5 h-5" />
           </a>
-          <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-            <Twitter className="w-5 h-5" />
+          <a href="mailto:karthikeyabarnala0@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">
+            <Mail className="w-5 h-5" />
           </a>
         </div>
       </div>
     </footer>
   );
 }
+

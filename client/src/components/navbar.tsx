@@ -58,9 +58,11 @@ export default function Navbar() {
               {link.name}
             </button>
           ))}
-          <Button variant="outline" className="ml-4 border-primary/20 hover:border-primary/50 hover:bg-primary/10">
-            Resume
-          </Button>
+          <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="ml-4">
+            <Button variant="outline" className="border-primary/20 hover:border-primary/50 hover:bg-primary/10 cursor-pointer">
+              Resume
+            </Button>
+          </a>
         </div>
 
         {/* Mobile Nav Toggle */}
@@ -91,9 +93,11 @@ export default function Navbar() {
                   {link.name}
                 </button>
               ))}
-              <Button className="w-full mt-4 bg-primary/20 text-primary hover:bg-primary/30 border border-primary/20">
-                Download Resume
-              </Button>
+              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="w-full mt-4 block">
+                <Button className="w-full bg-primary/20 text-primary hover:bg-primary/30 border border-primary/20 cursor-pointer">
+                  Download Resume
+                </Button>
+              </a>
             </div>
           </motion.div>
         )}

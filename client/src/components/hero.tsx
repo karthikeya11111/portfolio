@@ -1,10 +1,17 @@
 import { motion } from "framer-motion";
-import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowDown, Github, Linkedin, Mail, Phone, Code2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroBg from "@assets/generated_images/dark_abstract_cybernetic_background_with_neon_cyan_and_purple_lines.png";
 import avatar from "@assets/generated_images/3d_stylized_developer_avatar.png";
 
 export default function Hero() {
+  const scrollToSection = (id: string) => {
+    const element = document.querySelector(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
       {/* Background with Overlay */}
@@ -26,7 +33,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="inline-block px-3 py-1 mb-4 border border-primary/30 rounded-full bg-primary/10 text-primary text-sm font-medium"
+            className="inline-block px-3 py-1 mb-4 border border-primary/30 rounded-full bg-primary/10 text-primary text-sm font-medium animate-pulse"
           >
             Available for hire
           </motion.div>
@@ -37,27 +44,45 @@ export default function Hero() {
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-lg">
-            Aspiring <span className="text-foreground font-semibold">ERP & Full Stack Developer</span> with expertise in <span className="text-foreground font-semibold">AR/VR Innovation</span>. Building enterprise solutions, machine learning applications, and scalable digital systems.
+            Final-year Computer Science student & <span className="text-foreground font-semibold">Full Stack Developer</span> specializing in <span className="text-foreground font-semibold">AR/VR & Enterprise Solutions</span>. Building secure, reliable software systems and AI-enabled platforms.
           </p>
           
           <div className="flex flex-wrap gap-4 mb-12">
-            <Button size="lg" className="bg-primary hover:bg-primary/90 text-white shadow-[0_0_20px_rgba(124,58,237,0.3)]">
+            <Button 
+              size="lg" 
+              onClick={() => scrollToSection("#contact")}
+              className="bg-primary hover:bg-primary/90 text-white shadow-[0_0_20px_rgba(124,58,237,0.3)] cursor-pointer"
+            >
               Contact Me
             </Button>
-            <Button size="lg" variant="outline" className="border-primary/20 hover:bg-primary/10">
+            <Button 
+              size="lg" 
+              variant="outline" 
+              onClick={() => scrollToSection("#projects")}
+              className="border-primary/20 hover:bg-primary/10 cursor-pointer"
+            >
               View Projects
             </Button>
           </div>
 
-          <div className="flex gap-6 text-muted-foreground">
-            <a href="https://github.com/karthikeyabarnala" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors hover:scale-110 transform duration-200">
+          <div className="flex flex-wrap gap-6 items-center text-muted-foreground">
+            <a href="https://github.com/karthikeya11111" target="_blank" rel="noopener noreferrer" title="GitHub" className="hover:text-primary transition-colors hover:scale-110 transform duration-200">
               <Github className="w-6 h-6" />
             </a>
-            <a href="https://linkedin.com/in/karthikeyabarnala" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors hover:scale-110 transform duration-200">
+            <a href="https://www.linkedin.com/in/karthikeya-barnala-813a54320" target="_blank" rel="noopener noreferrer" title="LinkedIn" className="hover:text-primary transition-colors hover:scale-110 transform duration-200">
               <Linkedin className="w-6 h-6" />
             </a>
-            <a href="mailto:karthikeyabarnala0@gmail.com" className="hover:text-primary transition-colors hover:scale-110 transform duration-200">
+            <a href="mailto:karthikeyabarnala0@gmail.com" title="Email" className="hover:text-primary transition-colors hover:scale-110 transform duration-200">
               <Mail className="w-6 h-6" />
+            </a>
+            <a href="tel:+918341834232" title="Phone" className="hover:text-primary transition-colors hover:scale-110 transform duration-200">
+              <Phone className="w-6 h-6" />
+            </a>
+            <a href="https://leetcode.com/u/23341A0520/" target="_blank" rel="noopener noreferrer" title="LeetCode" className="hover:text-primary transition-colors hover:scale-110 transform duration-200 flex items-center gap-1 font-mono text-sm font-semibold border border-white/10 px-2 py-0.5 rounded bg-white/5">
+              <span>LC</span>
+            </a>
+            <a href="https://www.codechef.com/users/cs_23341a0520" target="_blank" rel="noopener noreferrer" title="CodeChef" className="hover:text-primary transition-colors hover:scale-110 transform duration-200 flex items-center gap-1 font-mono text-sm font-semibold border border-white/10 px-2 py-0.5 rounded bg-white/5">
+              <span>CC</span>
             </a>
           </div>
         </motion.div>
@@ -82,7 +107,7 @@ export default function Hero() {
               transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
               className="absolute -top-6 -right-6 glass p-4 rounded-xl border-l-4 border-l-cyan-400"
             >
-              <span className="text-sm font-bold text-foreground">CGPA: 8.7</span>
+              <span className="text-sm font-bold text-foreground">CGPA: 8.66</span>
               <p className="text-xs text-muted-foreground">Academic Excellence</p>
             </motion.div>
             
@@ -94,6 +119,17 @@ export default function Hero() {
               <span className="text-sm font-bold text-foreground">AR & VR</span>
               <p className="text-xs text-muted-foreground">Unity Developer</p>
             </motion.div>
+
+            <motion.div 
+              animate={{ x: [0, 10, 0] }}
+              transition={{ repeat: Infinity, duration: 6, ease: "easeInOut", delay: 0.5 }}
+              className="absolute top-1/2 -left-12 glass p-3 rounded-xl border-l-4 border-l-purple-500"
+            >
+              <span className="text-sm font-bold text-foreground flex items-center gap-1">
+                <Code2 className="w-4 h-4 text-purple-400" /> 300+ Solved
+              </span>
+              <p className="text-xs text-muted-foreground">LeetCode / CodeChef</p>
+            </motion.div>
           </div>
         </motion.div>
       </div>
@@ -101,10 +137,12 @@ export default function Hero() {
       <motion.div 
         animate={{ y: [0, 10, 0] }}
         transition={{ repeat: Infinity, duration: 2 }}
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 text-muted-foreground"
+        className="absolute bottom-10 left-1/2 -translate-x-1/2 text-muted-foreground cursor-pointer"
+        onClick={() => scrollToSection("#skills")}
       >
         <ArrowDown className="w-6 h-6" />
       </motion.div>
     </section>
   );
 }
+
